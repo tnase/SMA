@@ -8,9 +8,14 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-    console.log("test ////");
+   
 
   }
+
+  test(){
+    console.log("test reussit")
+  }
+
 
   
 
