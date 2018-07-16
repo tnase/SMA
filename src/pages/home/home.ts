@@ -9,12 +9,12 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
    
-
+    
   }
 
-  test(){
-    console.log("test reussit")
-  }
+ uneFnction(): void {
+  alert("test reussit");
+}
 
 
   
