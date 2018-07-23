@@ -1,0 +1,22 @@
+[
+    {
+        "name" : "College la paix",
+        "localisatoin" : "nkolbisson",
+        "logo" :"/assets/images/1.jpg"
+    },
+    {
+        "name" : "College Excellence",
+        "localisatoin" : "nkolbisson",
+        "logo" :"/assets/images/2.jpg"
+    },
+    {
+        "name" : "Ecole Americaine nkolbison",
+        "localisatoin" : "nkolbisson",
+        "logo" :"/assets/images/3.jpg"
+    },
+    {
+        "name" : "College les Mbomelites",
+        "localisatoin" : "nkolbisson",
+        "logo" :"/assets/images/4.jpg"
+    }
+]
