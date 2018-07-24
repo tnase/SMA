@@ -12,11 +12,11 @@
 <ion-content padding>
     
   <ion-list>
-    <ion-item (click)="goToDetails(item.name.first)" *ngFor=" let item of data">
+    <ion-item (click)="goToDetails(item.name)" *ngFor=" let item of data">
       <ion-thumbnail item-start>
-        <img src="{{item.picture.thumbnail}}">
+        <img src="{{item.logo}}">
       </ion-thumbnail>
-      <h2>{{item.name.first}}</h2>
+      <h2>{{item.name}}</h2>
       <p>Hayao Miyazaki • 1988</p>
       <button ion-button clear item-end>View</button>
     </ion-item>

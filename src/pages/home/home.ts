@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DetailsPage } from '../details/details';
-import {Http ,Headers} from '@angular/http'
+import {Http } from '@angular/http'
 import 'rxjs/add/operator/map';
 
 
@@ -24,11 +24,11 @@ export class HomePage {
 }
 
 loadUser(){
-  this.http.get('https://randomuser.me/api/?results=50')
+  this.http.get('http://www.print-enterprise.com/schoolList.json')
            .map(res=>res.json())
            .subscribe(data =>{
              this.data=data.results;
-             console.log(data.results);
+             console.log(this.data);
            },err =>{
              console.log(err);
            }) 
