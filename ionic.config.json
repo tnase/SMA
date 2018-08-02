@@ -1,8 +1,14 @@
 {
   "name": "schoolSearch",
-  "app_id": "d23c86d1",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/json",
+      "proxyUrl": "http://www.print-enterprise.com/json"
+    }
+  ],
+  "pro_id": "d23c86d1"
 }

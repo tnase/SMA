@@ -2,21 +2,46 @@
     {
         "name" : "College la paix",
         "localisatoin" : "nkolbisson",
-        "logo" :"./assets/images/1.jpg"
+        "logo" :"http://print-enterprise.com/json/log1.png",
+        "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
+        "building":"http://print-enterprise.com/json/log1.png",
+         "site" : "www.collegelapaix.com",
+         "facebook" :"college la paix",
+         "contact" :"695 492 561",
+          "email" : "contact@print-enterprise.com"
     },
     {
-        "name" : "College Excellence",
+        "name" : "College la retraite de yaounde",
         "localisatoin" : "nkolbisson",
-        "logo" :"./assets/images/2.png"
+        "logo" :"http://print-enterprise.com/json/log2.png",
+        "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
+        "building":"http://print-enterprise.com/json/log2.png",
+         "site" : "www.print-enterprise.com",
+         "facebook" :"college la retraite de yaounde",
+         "contact" :"695 492 561",
+          "email" : "contact@print-enterprise.com"
     },
     {
-        "name" : "Ecole Americaine nkolbison",
+        "name" : "College ibay ",
         "localisatoin" : "nkolbisson",
-        "logo" :"./assets/images/3.jpg"
+        "logo" :"http://print-enterprise.com/json/log3.jpg",
+        "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
+        "building":"http://print-enterprise.com/json/log3.jpg",
+         "site" : "www.print-enterprise.com",
+         "facebook" :"college ibay",
+         "contact" :"695 492 561",
+          "email" : "contact@print-enterprise.com"
     },
     {
-        "name" : "College les Mbomelites",
+        "name" : "Ecole Americaine de yaounde",
         "localisatoin" : "nkolbisson",
-        "logo" :"./assets/images/4.png"
+        "logo" :"http://print-enterprise.com/json/log4.jpg",
+        "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
+        "building":"http://print-enterprise.com/json/log4.jpg",
+         "site" : "www.print-enterprise.com",
+         "facebook" :"Ecole Americaine de yaounde",
+         "contact" :"695 492 561",
+          "email" : "contact@print-enterprise.com"
     }
+
 ]}
