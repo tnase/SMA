@@ -14,7 +14,8 @@ export class HomePage {
   headers = new Headers({'user-key': '1234567890123'});
   options = new RequestOptions ({headers: this.headers}); 
     url :string;
-    data : string;
+    data : any;
+    quartiers =[];
      names;
 
     constructor(public http: Http,public navCtrl: NavController) {
@@ -33,11 +34,32 @@ loadUser(){
            .subscribe(data =>{
              this.data=data.results;
              console.log(this.data);
+             for(var entry=0;entry<this.data.length ;entry++){
+                 this.quartiers.push(this.data[entry].localisatoin);
+                 
+              }
+              // teste de reception des quartiers
+              console.log("+++"+this.quartiers); 
            },err =>{
              console.log(err);
-           }) 
-
+           })
+ 
 }
+
+  getItems(ev: any) {
+    // Reset items back to all of the items
+    this.loadUser();
+
+    // set val to the value of the searchbar
+    const val = ev.target.value;
+
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.quartiers = this.quartiers.filter((item) => {
+        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
+  }
 
 
   
