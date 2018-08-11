@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,LoadingController } from 'ionic-angular';
 import { DetailsPage } from '../details/details';
 import {Http ,Headers, RequestOptions } from '@angular/http'
 import 'rxjs/add/operator/map';
+import { SearchPipe } from '../../pipes/search/search';
+import { SortPipe } from '../../pipes/sort/sort';
 
 
 
@@ -15,12 +17,31 @@ export class HomePage {
   options = new RequestOptions ({headers: this.headers}); 
     url :string;
     data : any;
-    quartiers =[];
-     names;
+    names;
+    descending: boolean = false;
+    order: number;
+    column: string = 'name';
+    loadItem :boolean = false;
 
-    constructor(public http: Http,public navCtrl: NavController) {
+    constructor(public http: Http,public navCtrl: NavController,public loadingCtrl: LoadingController) {
       this.loadUser();
+     
   }
+
+
+
+  presentLoadingDefault() {
+    let loading = this.loadingCtrl.create({
+      content: 'Please wait...'
+    });
+  
+    loading.present();
+  
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+  }
+
 
   goToDetails(names,contact,email,building,facebook,site): void { 
     this.names =names||'no name';
@@ -29,37 +50,23 @@ export class HomePage {
 }
 
 loadUser(){
+  
   this.http.get('/json/schoolList.json',this.options)
            .map(res=>res.json())
            .subscribe(data =>{
              this.data=data.results;
+             this.loadItem=true;
              console.log(this.data);
-             for(var entry=0;entry<this.data.length ;entry++){
-                 this.quartiers.push(this.data[entry].localisatoin);
-                 
-              }
-              // teste de reception des quartiers
-              console.log("+++"+this.quartiers); 
            },err =>{
              console.log(err);
            })
  
 }
 
-  getItems(ev: any) {
-    // Reset items back to all of the items
-    this.loadUser();
-
-    // set val to the value of the searchbar
-    const val = ev.target.value;
-
-    // if the value is an empty string don't filter the items
-    if (val && val.trim() != '') {
-      this.quartiers = this.quartiers.filter((item) => {
-        return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      })
-    }
-  }
+sort(){
+  this.descending = !this.descending;
+  this.order = this.descending ? 1 : -1;
+}
 
 
   

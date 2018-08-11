@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { DetailsPage} from '../pages/details/details';
+import { SearchPipe } from '../pipes/search/search';
+import { SortPipe } from '../pipes/sort/sort';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,7 +24,9 @@ import { HttpServiceProvider } from '../providers/http-service/http-service';
     ContactPage,
     HomePage,
     TabsPage,
-    DetailsPage
+    DetailsPage,
+    SearchPipe,
+    SortPipe
   ],
   imports: [
     BrowserModule,

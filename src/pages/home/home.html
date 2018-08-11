@@ -1,8 +1,8 @@
-<ion-header>
-  <ion-navbar>
+<ion-header >
+  <ion-navbar color="primary">
     <ion-title padding>
       <span style="padding-left: 20%;">Liste des Ecoles</span>
-      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-searchbar [(ngModel)]="terms"></ion-searchbar>
  </ion-title>
  </ion-navbar>
 </ion-header>
@@ -10,7 +10,7 @@
 <ion-content padding>
     
   <ion-list>
-    <ion-item (click)="goToDetails(item.name,item.contact,item.email,item.building,item.facebook,item.site)" *ngFor=" let item of data">
+    <ion-item (click)="goToDetails(item.name,item.contact,item.email,item.building,item.facebook,item.site)" *ngFor=" let item of data | search : terms | sort: {property: column, order: order}">
       <ion-thumbnail item-start>
         <img src="{{item.logo}}">
       </ion-thumbnail>

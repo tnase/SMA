@@ -1,7 +1,7 @@
 { "results" :[
     {
         "name" : "College la paix",
-        "localisatoin" : "nkolbisson",
+        "localisation" : "nkolbisson",
         "logo" :"http://print-enterprise.com/json/log1.png",
         "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
         "building":"http://print-enterprise.com/json/log1.png",
@@ -12,7 +12,7 @@
     },
     {
         "name" : "College la retraite de yaounde",
-        "localisatoin" : "nkolbisson",
+        "localisation" : "mokolo",
         "logo" :"http://print-enterprise.com/json/log2.png",
         "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
         "building":"http://print-enterprise.com/json/log2.png",
@@ -23,7 +23,7 @@
     },
     {
         "name" : "College ibay ",
-        "localisatoin" : "nkolbisson",
+        "localisation" : "biyem assi",
         "logo" :"http://print-enterprise.com/json/log3.jpg",
         "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
         "building":"http://print-enterprise.com/json/log3.jpg",
@@ -34,7 +34,7 @@
     },
     {
         "name" : "Ecole Americaine de yaounde",
-        "localisatoin" : "nkolbisson",
+        "localisation" : " ngousso ",
         "logo" :"http://print-enterprise.com/json/log4.jpg",
         "description" :"Ecole situer  a yaounde avec le systeme anglofone et francophone ",
         "building":"http://print-enterprise.com/json/log4.jpg",

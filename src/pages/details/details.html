@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar >
+  <ion-navbar color="primary">
     <ion-title >{{name}}</ion-title>
   </ion-navbar>
 
@@ -15,8 +15,8 @@
 
 <ion-content padding>
   <ion-img width="100%" height="60%" src="{{building}}" style="background-color: white;margin-left:4%;margin-right:4%;"></ion-img>
-  <ion-label><strong >Site web  </strong>   : {{site}}</ion-label>
-  <ion-label><strong>Contact  </strong>    : {{contact}}</ion-label>
-  <ion-label><strong>Email </strong>       : {{email}}</ion-label>
-  <ion-label><strong>Facebook </strong>    : {{facebook}}</ion-label>
+  <br><br><br><a href="http://{{site}}">  <ion-icon name="logo-chrome"> {{site}}</ion-icon></a> <br><br>
+  <ion-icon class="icon1" name="call"> {{contact}}</ion-icon> <br><br> 
+  <ion-icon class="icon1" name="mail"> {{email}}</ion-icon> <br><br>
+  <a href="{{facebook}}"><ion-icon class="icon1" name="logo-facebook"> {{facebook}}</ion-icon></a> <br>
 </ion-content>
